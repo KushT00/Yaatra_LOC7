@@ -19,3 +19,6 @@ pip install -r requirements.txt
 pnpm run dev
 ```
 
+https://drive.google.com/file/d/1LowYCbmsVQV2Q7gkIE8e_yxHEyjD0B_J/view?usp=sharing
+
+
