@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --foreground-rgb: 40, 40, 40;
+  --background-start-rgb: 255, 255, 250;
+  --background-end-rgb: 255, 250, 235;
+
+  --primary: 47 100% 85%; /* Soft Pastel Yellow */
+  --primary-foreground: 30 20% 20%; /* Darker but Smooth for Readability */
+  --secondary: 50 80% 80%; /* Light Buttery Yellow */
+  --secondary-foreground: 30 20% 20%;
+
+  --accent: 47 90% 75%; /* Soft Peachy Yellow */
+  --accent-foreground: 30 20% 20%;
+  --muted: 50 50% 90%; /* Very Light Pastel Yellow */
+  --muted-foreground: 40 30% 40%;
+
+  --border: 47 60% 85%; /* Soft Creamy Border */
+  --input: 47 60% 85%;
+  --ring: 47 80% 75%;
+
+  --sidebar-background: 47 100% 95%; /* Gentle Pastel Yellow */
+  --sidebar-foreground: 30 20% 20%;
+  --sidebar-primary: 47 90% 80%;
+  --sidebar-primary-foreground: 30 20% 20%;
+  --sidebar-accent: 47 90% 75%;
+  --sidebar-accent-foreground: 30 20% 20%;
+  --sidebar-border: 47 50% 85%;
+  --sidebar-ring: 47 80% 75%;
+}
+
+
+
+/* 🌿 Deuteranopia Theme */
+[data-theme="deuteranopia"] {
+  --background-start-rgb: 25, 40, 50;
+  --background-end-rgb: 15, 30, 40;
+
+  --primary: 200 80% 30%;
+  --primary-foreground: 50 90% 80%;
+  --secondary: 210 75% 40%;
+  --secondary-foreground: 48 80% 75%;
+  --accent: 43 74% 66%;
+  --accent-foreground: 0 0% 98%;
+  --muted: 200 30% 20%;
+  --muted-foreground: 200 20% 75%;
+  --border: 200 30% 40%;
+  --input: 200 30% 40%;
+  --ring: 210 60% 45%;
+
+  --sidebar-background: 200 25% 15%;
+  --sidebar-foreground: 200 5% 90%;
+  --sidebar-primary: 210 58% 39%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 200 50% 30%;
+  --sidebar-accent-foreground: 200 5% 90%;
+  --sidebar-border: 200 20% 40%;
+  --sidebar-ring: 210 60% 50%;
+}
+
+/* 🌾 Tritanopia Theme */
+[data-theme="tritanopia"] {
+  --background-start-rgb: 40, 30, 50;
+  --background-end-rgb: 25, 20, 35;
+
+  --primary: 280 70% 35%;
+  --primary-foreground: 40 90% 75%;
+  --secondary: 320 60% 40%;
+  --secondary-foreground: 30 85% 70%;
+  --accent: 43 74% 66%;
+  --accent-foreground: 0 0% 98%;
+  --muted: 280 30% 25%;
+  --muted-foreground: 280 20% 80%;
+  --border: 280 30% 40%;
+  --input: 280 30% 40%;
+  --ring: 300 60% 50%;
+
+  --sidebar-background: 280 25% 15%;
+  --sidebar-foreground: 280 5% 90%;
+  --sidebar-primary: 290 58% 39%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 280 50% 30%;
+  --sidebar-accent-foreground: 280 5% 90%;
+  --sidebar-border: 280 20% 40%;
+  --sidebar-ring: 290 60% 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 15, 30, 15;
+    --background-end-rgb: 10, 20, 10;
+  }
+}
+
+/* Base Styles */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
